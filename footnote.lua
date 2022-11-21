@@ -2,7 +2,7 @@
 function Note(el)
   stringify = pandoc.utils.stringify
   if #el.content == 1 then
-    local ft = stringify(el.content[1]) 
+    local ft = stringify(el.content[1])
     if string.sub(ft,1,4) == "fig:" then
         local fn = string.sub(ft,5)
         --print(fn)
